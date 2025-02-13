@@ -47,3 +47,49 @@ body {
     --white-accent: #f5f5f5;
     --white: #ffffff;
 }
+
+/* Block Component */
+.block {
+    padding: 1.25rem;
+}
+
+.block__content {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.block--colored {
+    background: var(--primary-100);
+}
+
+@media only screen and (min-width: 744px) {
+    .block {
+        padding: 2rem;
+    }
+}
+
+/* Nav */
+.nav {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: var(--white);
+    border-radius: 100px;
+    padding: 0.625rem 0.75rem 0.625rem 0.625rem;
+}
+
+.nav__logo {
+    width: 3rem;
+}
+
+.nav__title {
+    color: var(--primary-200);
+    font-weight: 700;
+    letter-spacing: 1%;
+}
+
+@media only screen and (min-width: 744px) {
+    .nav__title {
+        font-size: 1.25rem;
+    }
+}
