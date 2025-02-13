@@ -83,6 +83,7 @@ body {
 .logo__txt {
     color: var(--white);
     font-weight: 700;
+    /* Fix property value here */
     letter-spacing: 1%;
 }
 
@@ -99,4 +100,118 @@ body {
     .logo__txt {
         font-size: 1.25rem;
     }
+}
+
+/* Generator Component */
+.generator {
+    /* Wont be styled any other way so not going to include a modifier */
+    background: var(--white);
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+.generator__label {
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+}
+
+.generator__range-container,
+.generator__checkbox-container {
+    margin-bottom: 0.625rem;
+}
+
+.generator__range-container,
+.generator__range-control,
+.generator__checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.generator__range-label {
+    font-size: 0.875rem;
+}
+
+.generator__range-control,
+.generator__checkbox-container {
+    justify-content: unset;
+    gap: 16px;
+}
+
+.generator__range-input,
+.generator__checkbox-input {
+    accent-color: var(--primary-200);
+}
+
+.generator__range-value {
+    color: var(--primary-200);
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.generator__checkbox-container {
+    gap: 8px;
+}
+
+.generator__checkbox-container:last-of-type {
+    margin-bottom: 1rem;
+}
+
+.generator__output-container {
+    border: 1px solid var(--primary-300);
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Badge Component */
+.badge {
+    background: var(--white-accent);
+    border-radius: 100px;
+    display: inline-block;
+    font-size: 0.875rem;
+    padding: 0.25rem 0.5rem;
+}
+
+.badge--purple {
+    background: var(--primary-300);
+    color: var(--primary-200);
+}
+
+/* Button Component */
+.button {
+    border: 0;
+    border-radius: 12px;
+    font-weight: 500;
+    padding: 0.75rem 1rem;
+    width: 100%;
+}
+
+.button--primary {
+    background-color: var(--primary-200);
+    color: var(--white);
+}
+
+.button--secondary {
+    background: var(--white);
+    border: 1px solid var(--primary-200);
+    color: var(--primary-200);
+}
+
+/* Layout */
+.block__content .logo {
+    margin-bottom: 2.5rem;
+}
+
+.generator .badge {
+    margin-bottom: 1rem;
+}
+
+.generator .button {
+    margin-bottom: 0.625rem;
+}
+
+.generator .button:last-of-type {
+    margin: 0;
 }

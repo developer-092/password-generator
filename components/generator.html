@@ -1,0 +1,51 @@
+<section class="generator">
+    <p class="generator__label">Choose password type</p>
+    <p class="badge badge--purple">Coming soon</p>
+
+    <p class="generator__label">Customize your password</p>
+    <div class="generator__range-container">
+        <p class="generator__range-label">Characters</p>
+        <div class="generator__range-control">
+            <input
+                type="range"
+                name="generator__range-control"
+                id="generator__range-control"
+                min="8"
+                max="30"
+                step="1"
+                class="generator__range-input"
+            />
+            <p class="generator__range-value">8</p>
+        </div>
+    </div>
+    <div class="generator__checkbox-container">
+        <input
+            type="checkbox"
+            name="generator__checkbox-control-number"
+            id="generator__checkbox-control-number"
+            class="generator__checkbox-input"
+        />
+        <label for="generator__checkbox-control-number">Include numbers</label>
+    </div>
+    <div class="generator__checkbox-container">
+        <input
+            type="checkbox"
+            name="generator__checkbox-control-symbol"
+            id="generator__checkbox-control-symbol"
+            class="generator__checkbox-input"
+        />
+        <label for="generator__checkbox-control-symbol">Include symbols</label>
+    </div>
+
+    <p class="generator__label">Generated password</p>
+    <div class="generator__output-container">
+        <p class="generator__output">0BqgAf9PLbXfy2RC57xB</p>
+    </div>
+
+    <button class="generator__copy button button--primary">
+        Copy password
+    </button>
+    <button class="generator__regenerate button button--secondary">
+        Regenerate password
+    </button>
+</section>
