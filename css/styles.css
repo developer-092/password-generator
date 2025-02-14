@@ -128,7 +128,8 @@ body {
     justify-content: space-between;
 }
 
-.generator__range-label {
+.generator__range-label,
+.generator__checkbox-label {
     font-size: 0.875rem;
 }
 
@@ -165,6 +166,21 @@ body {
     margin-bottom: 1rem;
 }
 
+.generator__output {
+    font-size: 1.125rem;
+}
+
+@media only screen and (min-width: 744px) {
+    .generator__label {
+        font-size: 1rem;
+    }
+
+    .generator__range-container,
+    .generator__checkbox-container {
+        margin-bottom: 0.875rem;
+    }
+}
+
 /* Badge Component */
 .badge {
     background: var(--white-accent);
@@ -199,6 +215,62 @@ body {
     color: var(--primary-200);
 }
 
+/* Hero */
+.hero__left {
+    color: var(--white);
+}
+
+.hero__title {
+    line-height: 1.2;
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.hero__description {
+    margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 744px) {
+    .hero__title {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width: 1120px) {
+    .hero {
+        display: flex;
+        justify-content: space-between;
+        gap: 5rem;
+    }
+
+    .hero__left {
+        width: 50%;
+    }
+
+    .hero__title {
+        font-size: 2.5rem;
+    }
+
+    .hero__description {
+        font-size: 1.25rem;
+        margin: 0;
+    }
+
+    .hero__right {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1240px) {
+    .hero {
+        gap: 2rem;
+    }
+
+    .hero__title {
+        font-size: 4rem;
+    }
+}
+
 /* Layout */
 .block__content .logo {
     margin-bottom: 2.5rem;
@@ -214,4 +286,12 @@ body {
 
 .generator .button:last-of-type {
     margin: 0;
+}
+
+@media only screen and (min-width: 1240px) {
+    .hero__right .generator {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
 }
